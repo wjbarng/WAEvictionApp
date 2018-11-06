@@ -6,47 +6,49 @@
     <title>Submit Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/submitstyle.css" />
-    <script src = "http://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/index.js"></script>
 </head>
 <body>
     <h1>Enter Data from the Document</h1>
-    <Section id="submitsection">
-    <div>
-        <h2>Name</h2>
-        <input type="text">
+    <div id="a">
+        <div id="submitsection">
+            <div>
+                <h2>Name</h2>
+                <input type="text" id="input_name">
+            </div>
+            <div>
+                <h2>Address</h2>
+                <input type="text" id="input_address">
+            </div>
+            <div>
+                <h2>County</h2>
+                <input type="text" id="input_county">
+            </div>
+            <div>
+                <h2>Year</h2>
+                <input type="text" id="input_year">
+            </div>
+            <div>
+                <h2>File Name</h2>
+                <input type="text" id="input_file_name">
+            </div>
+            <div>
+                <h2>Page#</h2>
+                <input type="text" id="input_page_number">
+            </div>
+            <button id="submit_button">Submit</button>
+            
+        </div>
+        <div id="pdfsection">
+            <!--Display File-->
+            <iframe id="pdf_file" ></iframe>
+        </div>
     </div>
-    <div>
-        <h2>Address</h2>
-        <input type="text">
-    </div>
-    <div>
-        <h2>County</h2>
-        <input type="text">
-    </div>
-    <div>
-        <h2>Year</h2>
-        <input type="text">
-    </div>
-    <div>
-        <h2>File Name</h2>
-        <input type="text">
-    </div>
-    <div>
-        <h2>Page#</h2>
-        <input type="text">
-    </div>
-    <div><button id="submit">Submit</button></div>
-    
-    </Section>
-    <section id="pdfsection">
-        <!--Display File-->
-    </section>
 
 
 
 
-
+    <script src = "http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
