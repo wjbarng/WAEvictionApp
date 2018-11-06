@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EvictionData</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    
+    <p id="title">Washington Eviction Data</p>
+	
+	<div id="content"> 
+		<div class="inner">
+			<button class = "option" onclick = "view('newData')">Enter Data</button>
+			<button class = "option" onclick = "view('editData')">View Data</button>
+		</div>
+		
+		<div class="inner" id="display">
+		</div>
+		
+		<div id="newData" style="display: none;">
+			<div id="a">
+				<div id="submitsection">
+					<div>
+						<h2>Name</h2>
+						<input type="text" id="input_name">
+					</div>
+					<div>
+						<h2>Address</h2>
+						<input type="text" id="input_address">
+					</div>
+					<div>
+						<h2>County</h2>
+						<input type="text" id="input_county">
+					</div>
+					<div>
+						<h2>Year</h2>
+						<input type="text" id="input_year">
+					</div>
+					<div>
+						<h2>File Name</h2>
+						<input type="text" id="input_file_name">
+					</div>
+					<div>
+						<h2>Page#</h2>
+						<input type="text" id="input_page_number">
+					</div>
+					<button id="submit_button">Submit</button>
+					
+				</div>
+			</div>
+			
+			<div id="pdf">
+				<!--Display File-->
+				<iframe id="pdf_file" ></iframe>
+			</div>
+		</div>
+	</div>
+	
+	<script src = "http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="EVICTION_PROJECT_JS.js"></script>
+		
+	<script> 
+		function view(input) {
+			document.getElementById("display").innerHTML = document.getElementById(input).innerHTML;
+		}
+	</script>
+</body>
+</html>
