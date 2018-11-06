@@ -3,6 +3,7 @@
 window.onload = function(e) {
     var pdf = document.getElementById("pdf_file");
     pdf.src = "eviction_notice.pdf";
+	document.getElementById("input_file_name").value = "eviction_notice";
 }
 
 document.getElementById("submit_button").addEventListener('click', function() {
