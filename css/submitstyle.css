@@ -2,6 +2,26 @@ body {
     font-size: 0.5rem;
 }
 
+
+#submitsection {
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+}
+
+
+#pdfsection {
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+}
+
+iframe {
+    height: 500px;
+    width: 500px;
+}
+
 button {
     margin: 10px;
 }
